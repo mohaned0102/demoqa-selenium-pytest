@@ -9,7 +9,7 @@ https://demoqa.com/automation-practice-form.
 |---|---|
 | Website | Seite lädt, Titel, alle Felder sichtbar |
 | Vor-/Nachname | Eingabe wird übernommen, Pflichtfeld (leer → ungültig) |
-| E-Mail | gültige Adressen akzeptiert, ungültige (`max`, `max@`, `max@example` …) abgelehnt |
+| E-Mail | gültige Adressen akzeptiert, ungültige (`mohaned`, `@`, `ahmed@example` …) abgelehnt |
 | Handynummer | 10 Ziffern gültig, zu kurz / Buchstaben ungültig, max. 10 Zeichen, Pflichtfeld |
 | Absenden | komplettes Formular → Bestätigungs-Modal mit richtigen Daten |
 
