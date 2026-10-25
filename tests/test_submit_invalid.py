@@ -13,12 +13,12 @@ def test_submit_empty_form(form_page):
 
 
 def test_submit_without_gender(form_page):
-    form_page.type(P.FIRST_NAME, "Max")
-    form_page.type(P.LAST_NAME, "Mustermann")
+    form_page.type(P.FIRST_NAME, "mohaned")
+    form_page.type(P.LAST_NAME, "ouni")
     form_page.type(P.MOBILE, "0123456789")
     form_page.submit()
 
-    assert not form_page.is_valid(P.GENDER_MALE_INPUT), "Fehlendes Geschlecht wird als gültig akzeptiert"
+    assert not form_page.is_valid(P.GENDER_MALE), "Fehlendes Geschlecht wird als gültig akzeptiert"
     assert not form_page.modal_is_shown(timeout=2), "Formular wurde ohne Geschlecht abgeschickt"
 
 
@@ -27,7 +27,7 @@ def test_submit_without_gender(form_page):
     [
         {"first": ""},
         {"last": ""},
-        {"email": "max@"},
+        {"email": "moh"},
         {"mobile": "12345"},
         {"mobile": "abcdefghij"},
     ],
