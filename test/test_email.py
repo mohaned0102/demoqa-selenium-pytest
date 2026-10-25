@@ -1,3 +1,6 @@
+import pytest
+
+from test.form_page import PracticeFormPage as P
 @pytest.mark.parametrize("email", ["max@example.com", "max.mustermann@tu-dortmund.de"])
 def test_valid_email(form_page, email):
     form_page.type(P.EMAIL, email)
