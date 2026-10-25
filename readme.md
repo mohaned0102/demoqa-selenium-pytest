@@ -48,4 +48,4 @@ pytest -k invalid            # nur Tests, deren Name "invalid" enthält
 - **Bestanden:** grünes Banner oben im Browser.
 - **Fehlgeschlagen:** rotes Banner mit der Fehlermeldung im Browser, klare Meldung im
   Terminal (z. B. `Ungültige E-Mail 'max@' wird akzeptiert`) und ein Screenshot in
-  `screenshots/<testname>.png`. ahemed ahmed
+  `screenshots/<testname>.png`.# selenuim-form-testing
