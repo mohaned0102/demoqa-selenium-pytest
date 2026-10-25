@@ -1,4 +1,5 @@
 # DemoQA Practice Form – UI-Tests mit pytest + Selenium
+# DemoQA Practice Form – UI-Tests mit pytest + Selenium
 
 Automatisierte End-to-End-Tests für das Formular auf
 https://demoqa.com/automation-practice-form.
@@ -14,9 +15,14 @@ https://demoqa.com/automation-practice-form.
 
 ## Aufbau
 ```
-conftest.py               Browser-Setup, Ergebnis-Banner, Screenshots bei Fehlern
-tests/form_page.py        Page Object: Locators + Aktionen auf dem Formular
-tests/test_practice_form.py   die eigentlichen Testfälle
+conftest.py             Browser-Setup, Ergebnis-Banner, Screenshots bei Fehlern
+tests/
+├── form_page.py        Page Object: Locators + Aktionen auf dem Formular
+├── test_website.py     Website lädt, Felder sichtbar
+├── test_name.py        Vor- und Nachname
+├── test_email.py       E-Mail
+├── test_mobile.py      Handynummer
+└── test_submit.py      komplettes Formular absenden
 ```
 
 ## Setup
@@ -33,7 +39,8 @@ pytest                    # Browser sichtbar, bleibt nach jedem Test 2 s offen
 pytest --pause 5          # 5 Sekunden Pause nach jedem Test (gut für Demos)
 pytest --pause 0          # ohne Pause
 pytest --headless         # ohne Browserfenster
-pytest -k email           # nur die E-Mail-Tests
+pytest tests/test_email.py   # nur eine Testdatei (z. B. E-Mail)
+pytest -k invalid            # nur Tests, deren Name "invalid" enthält
 ```
 
 ## Ergebnis eines Tests
