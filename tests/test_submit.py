@@ -12,7 +12,7 @@ def test_submit_form_successfully(form_page):
 
     result = form_page.result_table()
     expected = {
-        "Student Name": "Mohaned ouni",
+        "Student Name": "mohaned ouni",
         "Student Email": "mohaned.ouni@tu-dortmund.de",
         "Mobile": "0123456789",
         "Gender": "Male",
