@@ -29,6 +29,4 @@ jobs:
         with:
           name: test-report
           path: report.html
-          path: |
-            report.html
-            screenshots/
+          
